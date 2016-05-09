@@ -1,0 +1,32 @@
+<ion-view title="Informações" hide-back-button="true" id="page5" style="background-color:#75F3A1;">
+    <ion-content padding="true" class="has-header">
+        <h2 id="informaEs-heading1" style="color:#000000;text-align:center;">Cotação atualizada</h2>
+        <div ng-controller="informationsCtrl" class="list card">
+            <div class="item item-divider">Cotação {{data.code}} para {{data.codein}}</div>
+            <div class="item item-body" >
+                <ion-list>
+                    <ion-item class="item-icon-left">
+                        <i class="icon ion-android-arrow-up"></i>High: R${{data.high}}</ion-item>
+                    <ion-item class="item-icon-left">
+                        <i class="icon ion-android-arrow-down"></i>Low: R${{data.low}}</ion-item>
+                    <ion-item class="item-icon-left">
+                        <i class="icon ion-social-usd-outline"></i>Bid: R${{data.bid}}</ion-item>
+                </ion-list>
+            </div>
+            <div  class="item item-divider">Atualização:  {{data.create_date | date:'dd/MM -'}}{{hora}}</div>
+        </div>
+        
+        <div class="list card" ng-controller="informationsCtrl">
+            <div class="item item-divider">Médias do {{data.code}} para {{data.codein}}</div>
+            <div class="item item-body" >
+                <ion-list>
+                    <ion-item class="item-divider" >Média diária</ion-item>
+                    <ion-item ng-controller="averageInformationCtrl">R${{averageDaily.toFixed(3)}}</ion-item>
+                    <ion-item class="item-divider" >Média dos ultimos 4 dias</ion-item>
+                    <ion-item ng-controller="lastAverageInformationCtrl">R${{lastAverage.toFixed(3)}}</ion-item>
+                </ion-list>
+            </div>
+            <div  class="item item-divider">Atualização:  {{data.create_date | date:'dd/MM -'}}{{hora}}</div>
+        </div>
+    </ion-content>
+</ion-view>
