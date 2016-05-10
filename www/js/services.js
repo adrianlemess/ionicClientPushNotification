@@ -22,7 +22,20 @@ angular.module('app.services', [])
 		}
 	}
 })
-
+.factory('listAverageDailyService', function($http) {
+    return {
+		getListAverageDaily: function(){
+			return $http.get("https://restfull-api-quotation-adrianlemess.c9users.io/api/getListAverageDaily");
+		}
+	}
+})
+.factory('listQuotationsService', function($http) {
+    return {
+		getListQuotations: function(){
+			return $http.get("https://restfull-api-quotation-adrianlemess.c9users.io/api/getListQuotations");
+		}
+	}
+})
 .service('BlankService', [function(){
 
 }]);

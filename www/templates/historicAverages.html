@@ -2,15 +2,13 @@
     <ion-content padding="true" class="has-header">
         <h2 id="histRicoDeMDias-heading3" style="color:#000000;text-align:center;">Histórico atualizado</h2>
         <div class="list card">
-            <div class="item item-divider">Médias diárias</div>
+            <div class="item item-divider">Médias diárias <span style="float:right; margin-right:15px">Data</span></div>
             <div class="item item-body">
-                <ion-list>
-                    <ion-item>U$ 3,5
-                        <span class="item-note">12/04</span>
+                <ion-list ng-repeat="data in datas">
+                    <ion-item>R${{data.average}}
+                        <span class="item-note">{{data.day | date:'dd/MM'}}</span>
                     </ion-item>
-                    <ion-item>U$ 3,48
-                        <span class="item-note">13/04</span>
-                    </ion-item>
+                   
                 </ion-list>
             </div>
         </div>
