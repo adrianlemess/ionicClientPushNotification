@@ -49,5 +49,5 @@ $ionic run android
 
 ### Any doubts? Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Twitter: @adrianlemess
+* Email: adrianlemess@gmail.com
