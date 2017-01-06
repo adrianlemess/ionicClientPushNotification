@@ -12,7 +12,7 @@ This project is only for example of how to use Ionic Push Notification.
 * [Configuration](#Configuration)
 * [Any doubts? Who do I talk to?](#Any doubts? Who do I talk to?)
 
-###How to Install
+###How to Install ###
 
 To install the project follow this instructions:
 ```
@@ -44,6 +44,8 @@ After this build and run:
 ``` 
 $ionic build android
 $ionic run android
+
+```
 
 ### Any doubts? Who do I talk to? ###
 
