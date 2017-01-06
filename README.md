@@ -8,11 +8,11 @@ This project is only for example of how to use Ionic Push Notification.
 ### What is this repository for? ###
 
 
-* [Installation](#Installation)
+* [How to Install](#How to Install)
 * [Configuration](#Configuration)
 * [Any doubts? Who do I talk to?](#Any doubts? Who do I talk to?)
 
-###Installation 
+###How to Install
 
 To install the project follow this instructions:
 ```
