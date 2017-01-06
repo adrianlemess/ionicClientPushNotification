@@ -32,7 +32,7 @@ $ionic serve
 If the registration view appear it's work.
 
 
-### Configuration ### 
+### Configuration 
 To run your app you should add a platform for IOS or Android:
 
 ```
